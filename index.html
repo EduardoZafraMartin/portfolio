@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Eduardo Zafra</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/mifoto.jpeg" alt="" />
+        </div>
+        <h1>Eduardo Zafra</h1>
+        <h2>Junior Full-stack Developer</h2>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/eduardo-zafra-mart%C3%ADn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/EduardoZafraMartin"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p class="parrafo-sobrermi">
+          <span>Hola, soy Eduardo Zafra</span>, un desarrollador de software
+          junior motivado con conocimientos de programación para páginas web y
+          desarrollo de aplicaciones. Me considero una persona que trabaja bien
+          en equipo y segura de sí misma que intenta estar siempre en contacto
+          con las últimas tecnologías para intentar explorar la posibilidad de
+          incluirlas en los proyectos que realizo, por ello me gusta investigar
+          y formarme cada día. Disfruto de la naturaleza, el deporte y la
+          tecnología.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                13-07-1990
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                675190365
+              </li>
+              <li>
+                <strong>Email</strong>
+                e.zafradev@gmail.com
+              </li>
+              <li>
+                <strong>GitHub</strong>
+                https://github.com/EduardoZafraMartin
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Junior Developer</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>MAC OS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-mountain"></i>
+                <span>MONTAÑA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dog"></i>
+                <span>PERROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>CODING</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-video"></i>
+                <span>SERIES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="pdf/CV Eduardo Zafra Martín.pdf" download="EduardoZafraMartinCV.pdf">
+          <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+        </a>
+      </div>
+    </section>
+
+   
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Desarrollo de Aplicaciones Web</h4>
+              <span class="casa">IES Leonardo da Vinci</span>
+              <span class="fecha">2020 - 2022</span>
+              <p>
+                Skills: HTML5, CSS, Java, JavaScript, React, PHP, SQL. 
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia</h3>
+            <div class="item der">
+              <h4>Junior Developer</h4>
+              <span class="casa">Plexus</span>
+              <span class="fecha">Septiembre 2020 - Diciembre 2022</span>
+              <p>
+                Implementación de procesos ETL utilizando SQL, Powershell, 
+                Talend, PowerCenter y Java para la extracción, transformación
+                y carga de datos en la base de datos de destino.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PROYECTOS</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/store.png" alt="" />
+            <div class="overlay">
+              <a href="https://capable-rabanadas-c854d4.netlify.app/index.html" title="FrontEndStore"><h3>HTML5, CSS</h3></a>
+              <a href="https://capable-rabanadas-c854d4.netlify.app/index.html" title="FrontEndStore"><p>Front-End Store</p></a>
+              <p>Web diseñada con HTML5 Y CSS de venta de camisetas Front-End (template) </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/freelancer.png" alt="" />
+            <div class="overlay">
+              <a href="https://quiet-empanada-54fbb8.netlify.app/" title="Freelancer"><h3>HTML5, CSS</h3></a>
+              <a href="https://quiet-empanada-54fbb8.netlify.app/" title="Freelancer"><p>Freelancer Web</p></a>
+              <p>Web diseñada con HTML5 Y CSS para ofrecer servicios freelancer</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/todo.jpg" alt="" />
+            <div class="overlay">
+              <a href="https://stirring-lamington-de4c8f.netlify.app/" title="Todo"><h3>React JS, Semantic UI</h3></a>
+              <a href="https://stirring-lamington-de4c8f.netlify.app/" title="Todo"><p>TODO-list</p></a>
+              <p>Web diseñada con con React JS y Semantic UI para añadir y eleminar tareas a una lista</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/morty.png" alt="" />
+            <div class="overlay">
+              <a href="https://unrivaled-zabaione-cce19e.netlify.app/" title="Rick"><h3>React JS, CSS</h3></a>
+              <a href="https://unrivaled-zabaione-cce19e.netlify.app/" title="Rick"><p>Rick & Morty API</p></a>
+              <p>Web creada con con React JS y CSS para hacer peticiones externas a una API</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/gaming.png" alt="" />
+            <div class="overlay">
+              <a href="https://proyecto-gaming1.000webhostapp.com" title="Gaming"><h3>PHP, HTML5 ,CSS, JavaScript, SQL</h3></a>
+              <a href="https://proyecto-gaming1.000webhostapp.com" title="Gaming"><p>Sala Gaming</p></a>
+              <p>Proyecto fin de grado que permite reservar puestos para una sala gaming, inscribirse en torneos y visualizar un ranking de los usuarios que más torneos han ganado.</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/marvel.jpg" alt="" />
+            <div class="overlay">
+              <a href="https://clever-crepe-ec64ad.netlify.app/" title="Marvel"><h3>React JS, React Router, Sass</h3></a>
+              <a href="https://clever-crepe-ec64ad.netlify.app/" title="Marvel"><p>Marvel Series & Comics</p></a>
+              <p>Web creada con con React JS y React Router para realizar peticiones externas a la API de Marvel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form  action="https://formsubmit.co/e.zafradev@gmail.com" method="POST">
+            <input type="text" name="nombre" placeholder="Tú Nombre" required/>
+            <input type="text" name="email" placeholder="Dirección de correo" required/>
+            <input type="text" name="subject" placeholder="Tema" required/>
+            <textarea
+              name="comments"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <button type="submit" value="Enviar" >
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+            <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.jpg" alt="">
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Madrid, 28024
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: 675190365
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  e.zafradev@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/eduardo-zafra-mart%C3%ADn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/EduardoZafraMartin"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
